@@ -1,0 +1,18 @@
+.show-results{
+  background-color: #a5a5a5e0;  
+  height: 200px;
+  color: #000000d8;
+  border-radius: 8px;
+}
+
+.cities-card{
+  background-color: #000000d8;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.city-weather-img{
+  height: 50px;
+  width: 50px;
+}

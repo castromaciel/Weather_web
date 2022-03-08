@@ -1,15 +1,11 @@
-import { MAPBOX_KEY } from "./keys";
 import axios from "axios";
-
-interface CityFound{
-  id: number; 
-  place_name: string; 
-  center: string []; 
-}
+import { MAPBOX_KEY } from "./keys";
+import { CityFound } from "../components/Search/interfaces/interfaces";
 
 export const getCity = async (city: string) => {
   if(city.length >= 5 ){
     try {
+      
       const resp = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?types=place%2Cpostcode%2Caddress&access_token=${MAPBOX_KEY}`);
   
       return resp.data.features.map( (city:CityFound) => ({

@@ -1,0 +1,11 @@
+.cities-card{
+  background-color: #7e5858d8;
+  margin: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.city-weather-img{
+  height: 50px;
+  width: 50px;
+}

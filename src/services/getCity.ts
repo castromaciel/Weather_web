@@ -8,11 +8,11 @@ export const getCity = async (city: string) => {
       
       const resp = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?types=place%2Cpostcode%2Caddress&access_token=${MAPBOX_KEY}`);
   
-      return resp.data.features.map( (city:CityFound) => ({
-        id: city.id,
-        name: city.place_name,
-        lng: city.center[0],
-        lat: city.center[1]
+      return resp.data.features.map( (city:CityFound | undefined) => ({
+        id: city?.id,
+        name: city?.place_name,
+        lng: city?.center[0],
+        lat: city?.center[1]
       }))
   
     } catch (error) {

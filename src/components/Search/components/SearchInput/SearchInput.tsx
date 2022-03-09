@@ -1,10 +1,11 @@
+import { useSearch } from '../../context/SearchContext';
 import { useLocation } from '../../hooks/useLocation';
 
 function SearchInput() {
-  
-  const { location, cityFound } = useLocation()
+  const {location, setLocation} = useSearch()
+  const { location2 , cityFound } = useLocation()
 
-  console.log(location)
+  // setLocation(location2)
 
   return (
 

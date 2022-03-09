@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import { CityFound } from '../interfaces/interfaces';
+import { CityFoundCopy } from '../interfaces/interfaces';
 import { getCity } from '../../../services/getCity';
 
 export const useLocation = () => {
 
-  const [location, setLocation] = useState<CityFound>();
+  const [location2, setLocation] = useState<CityFoundCopy>();
 
   const cityFound = async(place:string) => {
     setLocation(await getCity(place))
   }
 
   return {
-    location,
+    location2,
     cityFound
   }
 }

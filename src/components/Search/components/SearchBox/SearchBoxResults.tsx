@@ -1,5 +1,5 @@
-import { CitiesCard } from '../CitiesCard/CitiesCard';
 import './search-box-results.css'
+import { CitiesCard } from '../CitiesCard/CitiesCard';
 import { useSearch } from '../../hooks/useSearch';
 
 function SearchBoxResults() {

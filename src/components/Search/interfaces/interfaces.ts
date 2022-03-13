@@ -5,6 +5,7 @@ export interface CityFound{
 }
 
 export interface CityFoundCopy {
+  [x: string]: any;
   id: number; 
   place_name: string; 
   lng: string; 

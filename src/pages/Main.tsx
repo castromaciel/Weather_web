@@ -16,7 +16,7 @@ function Main() {
     <SearchContext.Provider value={{ location, setLocation }}>
       <div className='mt-5 d-flex flex-column align-items-center'>
         <SearchInput />
-        <SearchBoxResults />
+        {location.id !== 0 && <SearchBoxResults />}
       </div>
     </SearchContext.Provider>
   )

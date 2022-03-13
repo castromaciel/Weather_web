@@ -1,11 +1,16 @@
-import { useSearch } from '../../context/SearchContext';
+import { useEffect } from 'react';
 import { useLocation } from '../../hooks/useLocation';
+import { useSearch } from '../../hooks/useSearch';
 
 function SearchInput() {
-  const {location, setLocation} = useSearch()
+  const { setLocation } = useSearch()
   const { location2 , cityFound } = useLocation()
 
-  // setLocation(location2)
+  useEffect( () =>{
+    if(location2){
+      setLocation(location2)
+    }
+  })
 
   return (
 

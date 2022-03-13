@@ -4,12 +4,12 @@ export interface CityFound{
   center: string []; 
 }
 
-export interface CityFoundCopy{
+export interface CityFoundCopy {
   id: number; 
   place_name: string; 
   lng: string; 
   lat: string;
-}
+} 
 
 export interface SearchContextInterface{
   location: CityFoundCopy;

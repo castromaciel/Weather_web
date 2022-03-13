@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext } from 'react';
 import { SearchContextInterface } from '../interfaces/interfaces';
 
 export const SearchContext = createContext<SearchContextInterface>({
@@ -11,4 +11,3 @@ export const SearchContext = createContext<SearchContextInterface>({
   setLocation: (location) => console.warn('City not found: ', location),
 })
 
-export const useSearch = () => useContext(SearchContext);

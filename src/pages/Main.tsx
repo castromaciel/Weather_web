@@ -2,14 +2,14 @@ import SearchInput from '../components/Search/components/SearchInput/SearchInput
 import SearchBoxResults from '../components/Search/components/SearchBox/SearchBoxResults';
 import { SearchContext } from '../components/Search/context/SearchContext';
 import { useState } from 'react';
-import { CityFoundCopy, SearchContextInterface } from '../components/Search/interfaces/interfaces';
+import { CityFoundCopy } from '../components/Search/interfaces/interfaces';
 
 function Main() {
   const [location, setLocation] = useState<CityFoundCopy>({
-    id: 0,
-    place_name: "",
-    lng: "",
-    lat: "",
+    id:0,
+    place_name: "", 
+    lng:"",
+    lat:""
   });
 
   return (

@@ -8,9 +8,9 @@ function SearchBoxResults() {
   const { location } = useSearch()
 
   return (
-      <div className={`col-10 col-md-8 col-lg-6 show-results shadow`}>
+      <ul className={`col-10 col-md-8 col-lg-6 show-results shadow p-0`}>
         {location.map( (l:CityFoundCopy) => <CitiesCard {...l} /> )}        
-      </div>
+      </ul>
   )
 }
 export default SearchBoxResults

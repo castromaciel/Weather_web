@@ -1,3 +1,4 @@
+import { Weather } from '../../WeatherBox/interfaces/interfaces';
 export interface CityFound{
   id: number; 
   place_name: string; 
@@ -15,4 +16,9 @@ export interface CityFoundCopy {
 export interface SearchContextInterface{
   location: CityFoundCopy;
   setLocation: (CityFoundCopy: CityFoundCopy) => void;
+}
+
+export interface WeatherContextInterface{
+  weather: Weather;
+  setWeather: (Weather: Weather) => void;
 }

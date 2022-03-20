@@ -3,6 +3,7 @@ import SearchBoxResults from '../components/Search/components/SearchBox/SearchBo
 import { SearchContext } from '../components/Search/context/SearchContext';
 import { useState } from 'react';
 import { CityFoundCopy } from '../components/Search/interfaces/interfaces';
+import { WeatherCard } from '../components/WeatherBox/components/WeatherCard';
 
 function Main() {
   const [location, setLocation] = useState<CityFoundCopy>({
@@ -18,6 +19,7 @@ function Main() {
         <SearchInput />
         {location.id !== 0 && <SearchBoxResults />}
       </div>
+      <WeatherCard />
     </SearchContext.Provider>
   )
 }

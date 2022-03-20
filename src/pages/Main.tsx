@@ -1,5 +1,5 @@
-import SearchInput from '../components/Search/components/SearchInput/SearchInput';
-import SearchBoxResults from '../components/Search/components/SearchBox/SearchBoxResults';
+import SearchInput from '../components/Search/components/SearchInput';
+import SearchBoxResults from '../components/Search/components/SearchBoxResults';
 import { SearchContext } from '../components/Search/context/SearchContext';
 import { useState } from 'react';
 import { CityFoundCopy } from '../components/Search/interfaces/interfaces';

@@ -16,11 +16,13 @@ function Main() {
   });
 
   const [weather, setWeather] = useState<Weather>({
+    name: "",
     description: "",
     temp: 0,
     max: 0,
     min: 0
   })
+
 
   return (
     <SearchContext.Provider value={{ location, setLocation }}>
@@ -30,7 +32,8 @@ function Main() {
           <SearchInput />
           {location.id !== 0 && <SearchBoxResults />}
         </div>
-        <WeatherCard />
+
+        {weather.name !== "" && <WeatherCard />}
 
       </WeatherContext.Provider>
     </SearchContext.Provider>

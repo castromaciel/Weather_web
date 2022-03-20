@@ -9,7 +9,7 @@ const SearchBoxResults = () => {
 
   return (
       <ul className={`col-10 col-md-8 col-lg-6 show-results shadow p-0 show_results`}>
-        {location.map( (l:CityFoundCopy) => <CitiesCard {...l} /> )}        
+        {location.map( (l:CityFoundCopy) => <CitiesCard {...l} key={l.id}/> )}        
       </ul>
   )
 }

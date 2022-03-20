@@ -4,6 +4,8 @@ An interactive website where you can check the weather of a city.
 
 Technologies used: React with Typescript, Bootstrap and Nodejs for the backend.
 
+To show images, I used a set of icons from [https://www.flaticon.es/](https://www.flaticon.es/packs/weather-390?style_id=1222&family_id=333&group_id=534)
+
 ----------
 ## Available Scripts
 

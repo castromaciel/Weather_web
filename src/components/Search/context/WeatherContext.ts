@@ -4,6 +4,7 @@ import { Weather } from '../../WeatherBox/interfaces/interfaces';
 
 export const WeatherContext = createContext<WeatherContextInterface>({
   weather: {
+    name: "",
     description: "",
     temp: 0,
     max: 0,

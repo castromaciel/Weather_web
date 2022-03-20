@@ -1,3 +1,8 @@
 .card__weather_box{
   border-radius: 8px;
 }
+
+.img__weather_card{
+  height: 50px;
+  width: 50px;
+}

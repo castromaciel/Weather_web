@@ -1,17 +1,25 @@
+import styles from '../styles/weatherbox.module.css'
 import { useCityWeather } from '../../Search/hooks/useCityWeather';
-import { useSearch } from '../../Search/hooks/useSearch';
+import { images, weather_array } from '../../../assets/images';
 
 export const Status = () => {
 
-  const { location } = useSearch()
   const { weather } = useCityWeather()
- 
-  console.log(location)
-  console.log(weather)
+  const index = weather_array.findIndex( i => i === weather.description)
+
   return (
     <div className={`d-flex flex-column align-items-center`}>
-      <h3>city: {location.place_name}</h3>
-      <h3>img: {}</h3>
+      <h3>{weather.name}</h3>
+      
+      <img 
+        className={`${styles.img__weather_card}`} 
+        src={
+          index !== -1
+          ? images[index]
+          : ''
+        } 
+        alt={weather.description} />
+
       <h3>{weather.temp}°C</h3>
       <h3 className='text-capitalize'>{weather.description}</h3>
       <div className={`d-flex`}>

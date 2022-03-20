@@ -7,6 +7,7 @@ export const getWeather = async (lat:string ,lon:string ) => {
     
     const resp = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHERMAP_KEY}&units=metric&lang=en`)
     const weather:Weather = {
+      name: resp.data.name,
       description: resp.data.weather[0].description,
       temp: resp.data.main.temp,
       min: resp.data.main.temp_min,

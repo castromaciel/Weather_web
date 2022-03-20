@@ -15,7 +15,7 @@ export const CitiesCard = (props:CityFoundCopy) => {
 
   return (
 
-    <li key={props.id} className={`shadow d-flex align-items-center text-white cities__card`} onClick={async () => await cityWeather(props.lat, props.lng)}>
+    <li  className={`shadow d-flex align-items-center text-white cities__card`} onClick={async () => await cityWeather(props.lat, props.lng)}>
       <h3 className='p-1 m-1 m-0'>{props.name}</h3>
     </li>
 

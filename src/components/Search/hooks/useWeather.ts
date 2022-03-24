@@ -6,7 +6,6 @@ export const useWeather = () => {
   
   const [weather, setWeather] = useState<Weather>()
 
-
   const cityWeather = async (lat: string, long: string) => {
     setWeather(await getWeather(lat, long))
   }

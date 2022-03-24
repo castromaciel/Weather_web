@@ -7,9 +7,7 @@ const SearchInput = () => {
   const { location2 , cityFound } = useLocation()
 
   useEffect( () =>{
-    if(location2){
-      setLocation(location2)
-    }
+    if(location2) setLocation(location2)
   })
 
   return (

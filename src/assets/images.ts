@@ -9,7 +9,7 @@ import light_rain from '../assets/light_rain.png'
 import few_clouds from '../assets/overcast_clouds.png'
 import light_snow from '../assets/light_snow.png'
 import snow from '../assets/snow.png'
-
+import fog from '../assets/fog.png'
 
 export const images = [
   overcast_clouds,
@@ -21,6 +21,7 @@ export const images = [
   few_clouds,
   light_snow,
   snow,
+  fog,
 
 ]
 
@@ -33,6 +34,7 @@ export const weather_array = [
   'light rain',
   'few clouds',
   'light snow',
-  'snow'
+  'snow',
+  'fog',
 
 ]
